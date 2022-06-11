@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+p {
+    font-size: 1.1rem;
+    margin: top 5px;
+    line-height: 2.0rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+}
+
+p:first-letter {
+    font-size:200%;
+    font-family: Georgia;
+}
+
+#secao1 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    padding-top: 150px;
+
+
+    
+
+    background-image: url(/Img/fototelaprincipal.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+
+    z-index: 1; 
+}
+
+.section-title {
+    margin-top: 5px;
+    font-size: 2.7rem;
+    font-weight: 350;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    font-family: 'fa-times';
+}
+
+h2 {
+    color: transparent;
+    font-size: 4rem relative;
+    display: block;
+    width: fit-content;
+    position: relative;
+    padding-top: 20px;
+    animation: text_reveal .2s ease forwards;
+    animation-delay: 1s;
+}
+
+#secao1 h2:nth-child(1) span {
+    animation-delay: .5s;
+}
+
+#texto2 {
+    color: white;
+    font-size: 1rem relative;
+    display: block;
+    width: fit-content;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: gold;
+    background-color: transparent;
+    border: 2px solid gold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 20px;
+    transition: .5s ease;
+    transition-property: background-color, color;
+
+}
+
+.cta:hover {
+    color: white;
+    font-weight: 500;
+    background-color: gold;
+}
+
+#secao1 h2 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .1s;
+    background-color: gold;
+
+}
+
+#secao1 h2:nth-child(1) span {
+    animation-delay: .2s;
+}
+
+#secao1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.divrodape {
+    position: relative;
+    display: absolute;
+    text-align: center;
+    justify-content: bottom;
+    align-items: bottom;
+    padding-top: 9%;
+}
+
+.rodapetexto {
+
+    color: white;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1rem;
+    margin: bottom;
+}
+
+.rodape1 {
+    margin-top: 0px;
+    text-align: center;
+    color: black;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1rem;
+    display: block;
+
+}
+
+p.rodape1:first-letter, p.rodapetexto:first-letter {
+    font-size:100%;
+    font-family: Georgia;
+}
+
+.imagemrodape1 {
+    height: 20%;
+    width: 20%;
+    margin-left: 40%;
+    bottom: 0%;
+    align-items: bottom;
+
+}
+
+.classlinha{
+    display: block;
+    background-color: #002349;
+    color:white;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left:10%
+}
+
+.classlinhabotao {
+    display: inline-block;
+    padding: 10px 30px;
+    color: gold;
+    background-color: transparent;
+ /*   border: 2px solid gold;*/
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    transition: .5s ease;
+    transition-property: background-color, color;
+
+}
+
+.classlinhabotao:hover {
+    color: white;
+    font-weight: 500;
+    background-color: gold;
+}
+
+
+/* secao ferramentas */
+
+#portfolio-documentacao .portfolio-documentacao, #portfolio-ferramenta .portfolio-ferramenta {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#portfolio-documentacao .portfolio-documentacao-header h1, #portfolio-ferramenta .portfolio-ferramenta-header h1 {
+    margin-bottom: 50px;
+}
+
+#portfolio-documentacao .all-projects, #portfolio-ferramenta .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: justify;
+    flex-direction: column;
+}
+
+#portfolio-documentacao .project-item, #portfolio-ferramenta .project-item {
+    display: flex;
+    align-items: justify;
+    justify-content: justify;
+    flex-direction: column;
+    height: 900px;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#resumoobjeto {
+    line-height: 1.5rem;
+}
+
+#portfolio-documentacao .project-info, #portfolio-ferramenta .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #170829 0%, #002349 100%);
+    color: white;
+}
+
+#portfolio-documentacao .project-info h1, #portfolio-ferramenta .project-info h1 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#portfolio-documentacao .project-info P, #portfolio-ferramenta .project-info P {
+    font-size: 0.8rem;
+
+}
+
+
+#portfolio-documentacao .project-info h2, #portfolio-ferramenta .project-info h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+#portfolio-documentacao .project-img, #portfolio-ferramenta .project-img {
+    flex-basis: 50%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#portfolio-documentacao .project-img:after, #portfolio-ferramenta .project-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.7;
+}
+
+#portfolio-documentacao .project-img img, #portfolio-ferramenta .project-img img {
+    transition: 0.5s ease transform;
+}
+
+#portfolio-documentacao .project-item:hover .project-img img, #portfolio-ferramenta .project-item:hover .project-img img {
+    transform: scale(1.1);
+}
+
+
+
+/* keyframes */
+
+@keyframes text_reveal {
+    100% {
+        Color: white;
+    }
+}
+
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal_name {
+    100% {
+        color: gold;
+        font-weight: 500px;
+    }
+}
+
+
+/* Media Query */
+
+
+@media only screen and (min-width: 900px) {
+    #portfolio-documentacao .project-item, #portfolio-ferramenta .project-item {
+        flex-direction: row;
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #portfolio-documentacao .all-projects .project-info, #portfolio-ferramenta .all-projects .project-info {
+        height: 100%
+    }
+
+    #portfolio-documentacao .all-projects .project-img, #portfolio-ferramenta .all-projects .project-img {
+        height: 100%
+    }
+
+    #portfolio-documentacao .project-item:nth-child(even), #portfolio-ferramenta .project-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+
+}
