@@ -14,3 +14,35 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
+
+button {
+    display: block;
+    background-color: rgb(212, 120, 238);
+    color: Black;
+    width: 110px;
+    padding-left: 0;
+    font-size: 16px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 15px -4px #000000;
+    margin-left: 50px;
+}
+
+button:hover {
+
+    cursor: pointer;
+    background-color: rgb(229, 172, 245);
+    transform: translateY(-2px);
+}
+
+p {
+    margin-left: 30px;
+    line-height: 30px;
+}
+
+iframe {
+    margin-top:30px;
+    margin-left: 30px;
+}
