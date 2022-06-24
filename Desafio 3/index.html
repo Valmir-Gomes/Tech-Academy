@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Super Mario</title>
+
+</head>
+
+<body>
+
+
+    <div class="game">
+
+        <div class="menu">
+            <label class="nomejogador">Jogador</label>
+            <label class="score" id="score">Pontos: </label>
+
+            <audio id="player" autoplay="autoplay" loop="true">
+                <source src="./audio/mario_land_time_toquesengracadosmp3.com.mp3" type="audio/mp3" />
+
+            </audio>
+
+        </div>
+
+        <img src="img/sol animado.gif" class="sol-Animado">
+        <div class="inicio">
+            <h1 class="classeResultado">Bem Vindos ao jogo</h1>
+            <label id="labelnome" for="NomeJogador">Nome do Jogador</label>
+            <input id="nomeJogador" type="text" width="500px" />
+            <input type="submit" value="Inicio" onclick={clickbotao()} />
+        </div>
+
+        <div class="resultado">
+            <h1 class="classeResultado">Resultado</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th width=300px></th>
+                        <th width=100px></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="coluna11" class="grade"> Endereço:</td>
+                        <td id="coluna12" class="grade"></td>
+                    </tr>
+                    <tr>
+                        <td id="coluna21" class="grade"> Endereço:</td>
+                        <td id="coluna22" class="grade"></td>
+                    </tr>
+                    <tr>
+                        <td id="coluna31" class="grade"> Endereço:</td>
+                        <td id="coluna32" class="grade"></td>
+                    </tr>
+                    <tr>
+                        <td id="coluna41" class="grade"> Endereço:</td>
+                        <td id="coluna42" class="grade"></td>
+                    </tr>
+                    <tr>
+                        <td id="coluna51" class="grade"> Endereço:</td>
+                        <td id="coluna52" class="grade"></td>
+                    </tr>
+                    <tr>
+                        <td id="coluna61" class="grade"> Endereço:</td>
+                        <td id="coluna62" class="grade"></td>
+                    </tr>
+                    <tr>
+                        <td id="coluna71" class="grade"> Endereço:</td>
+                        <td id="coluna72" class="grade"></td>
+                    </tr>
+                    <tr>
+                        <td id="coluna81" class="grade"> Endereço:</td>
+                        <td id="coluna82" class="grade"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <input class="botao" type="submit" value="Jogar Novamente" onclick={clickbotaoR()} />
+
+        </div>
+        <a type="button" class="audio" onclick="document.getElementById('player').muted =true "><i
+                class="fa-solid fa-volume-xmark"></i>
+        </a>
+        <a type="button" class="audio1" onclick="document.getElementById('player').muted =false "><i
+                class="fa-solid fa-volume-high"></i>
+        </a>
+        <img src="img/Nuvem.png" class="cloud-game">
+        <img src="img/Nuvem.png" class="cloud-game1">
+        <img src="img/Nuvem.png" class="cloud-game2">
+        <img src="img/kukek-unscreen.gif" class="passaro">
+        <img src="img/kukek-unscreen.gif" class="passaro1">
+        <img src="img/kukek-unscreen.gif" class="passaro2">
+
+        <img src="img/Mario-Correndo-unscreen.gif" class="super-mario">
+        <img src="img/pipe.png" class="pipe-game">
+        <img src="img/moeda-imagem-animada.gif" class="moeda-game">
+
+
+    </div>
+    <script src="js/aula.js"></script>
+    <script src="https://kit.fontawesome.com/fc12bbcc0c.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

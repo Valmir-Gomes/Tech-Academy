@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* div de entrada */
+
+
+.inicio {
+
+    border: 1px solid black;
+    margin: 0px 30%;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 15px -4px #000000;
+}
+
+#nomeJogador {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    line-height: 5px;
+    padding: 5px 5px;
+    width : 300px;
+    font-size: 15px;
+    font-family: 'Amasis MT Pro Medium';
+}
+
+#labelnome {
+    display: block;
+    font-family: 'Showcard Gothic';
+    margin-top: 25px;
+    margin-bottom: 5px;
+    line-height: 5px;
+    font-size: 20px;
+}
+
+
+.inicio [type="submit"] {
+    display: block;
+    background-color: rgb(120, 167, 238);
+    color: white;
+    width: 110px;
+    padding-left: 0;
+    font-size: 16px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 15px -4px #000000;
+}
+
+.inicio [type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(16, 10, 54);
+    transform: translateY(-2px);
+}
+
+/* div de termino do jogo */
+
+.resultado {
+
+    box-sizing: 100px 800px;
+    visibility: hidden;
+    justify-content: center;
+
+    text-justify: center;
+    border: 1px solid black;
+    margin: 0px 30%;
+    top: 100px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    z-index: 1;
+    position: absolute;
+
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 15px -4px #000000;
+}
+
+
+
+.resultado [type="submit"] {
+    display: block;
+    background-color: rgb(120, 167, 238);
+    color: white;
+    width: 180px;
+    padding-left: 0;
+    font-size: 16px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 15px -4px #000000;
+}
+
+.resultado [type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(16, 10, 54);
+    transform: translateY(-2px);
+}
+
+.botao {
+    display: block;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.classeResultado {
+    display: block;
+    font-family: 'Engravers MT';
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.grade {
+    padding-bottom: 6px;
+    padding-left: 20px;
+    font-size: 25px;
+
+}
+
+/* menu */
+
+
+
+.menu {
+    justify-content: center;
+
+    text-justify: center;
+    border: 1px solid black;
+
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+    margin-bottom: 10px;
+
+    
+
+}
+
+.score {
+
+    font-family: 'Engravers MT';
+    color: yellow;
+    font-size: 30px;
+    margin-top: 10px;
+    padding-left: 100px;
+
+
+}
+
+.nomejogador {
+
+    font-family: 'Showcard Gothic';
+    color: Black;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 12px;
+
+}
+
+.audio{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 40px;
+
+    background-color: transparent;
+}
+.audio1{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 40px;
+
+    background-color: transparent;
+}
+
+
+
+/*  jogos */
+.game {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 100px solid rgb(24, 174, 24);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#29b7f0, #E0F6FF);
+
+}
+
+
+.pipe-game {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 2.5s infinite linear;
+}
+
+.moeda-game {
+    position: absolute;
+    bottom: 150px;
+    width: 80px;
+    animation: moeda-animation 2.5s infinite linear;
+
+}
+
+.super-mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump-mario {
+    animation: mario-animation 500ms ease-out;
+}
+
+.cloud-game {
+    top: 120px;
+    position: absolute;
+    width: 550px;
+    animation: cloud-animation 20s infinite linear;
+
+}
+
+.passaro {
+    top: 170px;
+    position: absolute;
+    width: 100px;
+    animation: passaro-animation 20s infinite linear;
+}
+
+.passaro1 {
+    top: 240px;
+    position: absolute;
+    width: 100px;
+    animation: passaro1-animation 20s infinite linear;
+}
+
+
+.passaro2 {
+    top: 205px;
+    position: absolute;
+    width: 100px;
+    animation: passaro2-animation 20s infinite linear;
+}
+
+
+
+.cloud-game1 {
+    top: 200px;
+    position: absolute;
+    width: 550px;
+    top: 200px;
+    animation: cloud-animation1 30s infinite linear;
+}
+
+.cloud-game2 {
+    top: 200px;
+    position: absolute;
+    width: 550px;
+    top: 170px;
+    animation: cloud-animation2 35s infinite linear;
+}
+
+
+
+.sol-Animado {
+    width: 200px;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+
+@keyframes moeda-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+
+@keyframes cloud-animation {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes cloud-animation1 {
+    from {
+        right: -350px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes cloud-animation2 {
+    from {
+        right: 100%;
+    }
+
+    to {
+        right: -350px;
+    }
+    
+}
+
+@keyframes passaro-animation {
+    from {
+        right: 100%;
+    }
+
+    to {
+        right: -350px;
+    }
+}
+
+@keyframes passaro1-animation {
+    from {
+        right: 115%;
+    }
+
+    to {
+        right: -250px;
+    }
+}
+
+@keyframes passaro2-animation {
+    from {
+        right: 140%;
+    }
+
+    to {
+        right: -450px;
+    }
+}
+
+@keyframes mario-animation {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 150px;
+    }
+
+    50% {
+        button: 150px;
+    }
+
+    60% {
+        bottom: 150px;
+    }
+
+    70% {
+        bottom: 150px;
+    }
+
+    100% {
+        bottom: 0%;
+    }
+
+}
